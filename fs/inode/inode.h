@@ -138,6 +138,7 @@ extern "C"
 #endif
 
 extern FAR struct inode *g_root_inode;
+extern const struct file_operations g_dir_fileops;
 
 /****************************************************************************
  * Public Function Prototypes

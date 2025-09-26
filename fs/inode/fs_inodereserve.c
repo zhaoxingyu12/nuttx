@@ -109,6 +109,7 @@ static FAR struct inode *inode_alloc(FAR const char *name, mode_t mode)
 
 #  endif
 #endif
+      inode->u.i_ops = &g_dir_fileops;
       inode_namecpy(inode->i_name, name);
     }
 
